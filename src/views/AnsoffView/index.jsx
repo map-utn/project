@@ -47,6 +47,7 @@ const AnsoffView = (props) => {
   const [showForm, setShowForm] = useState(false);
 
   // TO-DO: revisar el alto de los cuadrantes. Podriamos calcular dependiendo la pantalla
+
   return (
     <>
       <TitleContainer>

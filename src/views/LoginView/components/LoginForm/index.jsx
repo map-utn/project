@@ -16,7 +16,7 @@ import { Box, Typography } from '@mui/material';
 
 const LoginForm = ({ onSubmit }) => (
   <FormContainer>
-    <Title>Ingresar</Title>
+    <Title>Iniciar sesión</Title>
     <Formik onSubmit={onSubmit} initialValues={{ email: '', password: '' }}>
       {({ handleSubmit }) => (
         <CustomForm onSubmit={handleSubmit}>
@@ -68,7 +68,7 @@ const LoginForm = ({ onSubmit }) => (
               )}
             </ErrorMessage>
           </Box>
-          <SubmitButton type="submit">Login</SubmitButton>
+          <SubmitButton type="submit">Ingresar</SubmitButton>
         </CustomForm>
       )}
     </Formik>

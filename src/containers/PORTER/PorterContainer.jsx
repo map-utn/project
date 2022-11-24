@@ -39,6 +39,8 @@ const PorterContainer = () => {
 
   const steps = Object.keys(questions);
 
+  console.log({ steps });
+
   const [activeStep, setActiveStep] = useState(0);
   const [skipped, setSkipped] = useState(new Set());
   const [anchorElement, setAnchorElement] = useState(null);

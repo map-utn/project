@@ -20,6 +20,7 @@ import { useNavigate } from 'react-router-dom';
 import Comments from 'components/comments/Comments';
 import { COLORS } from 'helpers/enums/colors';
 import { Menu, MenuItem } from '@mui/material';
+import { getLabel } from 'helpers/enums/porter';
 
 const PorterContainerResults = () => {
   const { porterId, id } = useParams();
@@ -30,6 +31,8 @@ const PorterContainerResults = () => {
   const { questions } = porter;
 
   const steps = Object.keys(questions);
+
+  console.log({ steps });
 
   const [activeStep, setActiveStep] = useState(0);
   const [skipped, setSkipped] = useState(new Set());
@@ -103,7 +106,7 @@ const PorterContainerResults = () => {
               }
               return (
                 <Step key={label} {...stepProps}>
-                  <StepLabel {...labelProps}>{label}</StepLabel>
+                  <StepLabel {...labelProps}>{getLabel(label)}</StepLabel>
                 </Step>
               );
             })}
@@ -128,7 +131,7 @@ const PorterContainerResults = () => {
                     handleBack={handleBack}
                     handleNext={handleNext}
                     steps={steps}
-                    titulo={steps[activeStep]}
+                    titulo={getLabel(steps[activeStep])}
                     onClickButtonGoBack={onClickGoBack}
                     openComments={(target) => setAnchorElement(target)}
                     goToHub={goToHub}

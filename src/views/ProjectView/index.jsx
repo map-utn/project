@@ -264,18 +264,20 @@ const ProjectView = ({
                   <ArrowBack />
                 </IconButton>
               )}
-              <Typography
-                sx={{
-                  fontFamily: 'Fira Sans, sans-serif',
-                  fontSize: '24px',
-                  textAlign: 'center',
-                  marginRight: stepHover === 7 ? '25%' : '',
-                }}
-              >
-                {stepHover
-                  ? stepsInfo[stepHover].title
-                  : 'Proceso de Planificación Estratégica'}
-              </Typography>
+              <Box sx={{ display: 'flex', justifyContent: 'center', flex: 1 }}>
+                <Typography
+                  sx={{
+                    fontFamily: 'Fira Sans, sans-serif',
+                    fontSize: '24px',
+                    textAlign: 'center',
+                    marginRight: stepHover === 7 ? '25%' : '',
+                  }}
+                >
+                  {stepHover
+                    ? stepsInfo[stepHover].title
+                    : 'Proceso de Planificación Estratégica'}
+                </Typography>
+              </Box>
             </Box>
             <Typography
               sx={{

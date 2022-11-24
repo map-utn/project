@@ -95,8 +95,8 @@ const PorterView = ({
                         options={value}
                         placeholder={
                           key === 'nivelDeConcordancia'
-                            ? 'nivel de concordancia'
-                            : key
+                            ? 'Nivel de concordancia'
+                            : 'Valoración'
                         }
                         validate={validateField}
                       />

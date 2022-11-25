@@ -81,21 +81,12 @@ const ConsultoriaContainer = () => {
       }
     });
 
-    if (addProjects.length > 0)
-      dispatch(
-        onAssign(consultora?._id, {
-          email: consultant,
-          projects: addProjects,
-        })
-      );
-
-    if (removeProjects.length > 0)
-      dispatch(
-        onUnAssign(consultora?._id, {
-          email: consultant,
-          projects: removeProjects,
-        })
-      );
+    dispatch(
+      onAssign(consultora?._id, {
+        email: consultant,
+        projects: addProjects,
+      })
+    );
 
     closeModalAssignProjects();
   };

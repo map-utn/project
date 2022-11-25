@@ -201,7 +201,7 @@ export const consejosSelector = createSelector(
     return Object.entries(seeds).reduce((prevValue, [key, seedList]) => {
       let actualSeed = {};
       switch (key) {
-        case 'Politico':
+        case 'Político':
           return prevValue.concat(
             seedList
               ?.filter((seed) =>
@@ -221,7 +221,7 @@ export const consejosSelector = createSelector(
                 };
               })
           );
-        case 'Economico':
+        case 'Económico':
           return prevValue.concat(
             seedList
               ?.filter((seed) =>
@@ -261,7 +261,7 @@ export const consejosSelector = createSelector(
                 };
               })
           );
-        case 'Tecnologico':
+        case 'Tecnológico':
           return prevValue.concat(
             seedList
               ?.filter((seed) =>

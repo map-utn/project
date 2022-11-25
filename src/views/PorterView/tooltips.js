@@ -1,6 +1,6 @@
 export const tooltips = {
   'Rivalidad entre competidores':
-    'Esta fuerza representa el poder que tiene el consumidor sobre los precios y la calidad de su producto. ',
+    'Esta fuerza representa que tantas estrategias en conflicto existen en el mercado en el que usted genera su actividad económica. ',
   'Poder de negociación con los proveedores':
     'Representa que tanto poder tienen los proveedores sobre sus productos y sus características. ',
   'Amenaza de nuevos competidores':
@@ -8,5 +8,5 @@ export const tooltips = {
   'Amenaza de productos sustitutos':
     'Los productos sustitutos son productos que cumplen total o parcialmente con las necesidades que su producto subsana. Esta fuerza representa esa posibilidad. ',
   'Poder de negociación con los clientes':
-    'Esta fuerza representa que tantas estrategias en conflicto existen en el mercado en el que usted genera su actividad económica. ',
+    'Esta fuerza representa el poder que tiene el consumidor sobre los precios y la calidad de su producto. ',
 };

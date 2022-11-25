@@ -10,13 +10,13 @@ const getSeeds = (state) => state.pestel.seeds;
 export const politicoSelector = createSelector(
   [getPestel],
   (pestel) =>
-    pestel?.factores.filter((factor) => factor.area === 'Politico') || []
+    pestel?.factores.filter((factor) => factor.area === 'Político') || []
 );
 
 export const economicoSelector = createSelector(
   [getPestel],
   (pestel) =>
-    pestel?.factores.filter((factor) => factor.area === 'Economico') || []
+    pestel?.factores.filter((factor) => factor.area === 'Económico') || []
 );
 
 export const socialSelector = createSelector(
@@ -28,7 +28,7 @@ export const socialSelector = createSelector(
 export const tecnologicoSelector = createSelector(
   [getPestel],
   (pestel) =>
-    pestel?.factores.filter((factor) => factor.area === 'Tecnologico') || []
+    pestel?.factores.filter((factor) => factor.area === 'Tecnológico') || []
 );
 
 export const ambientalSelector = createSelector(

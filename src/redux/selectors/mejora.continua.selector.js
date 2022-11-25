@@ -65,10 +65,10 @@ export const pieChartSelector = createSelector([getPestels], (pestels) => {
   const data = pestels.map((pestel) => {
     return pestel.factores.reduce(
       (prev, item) => {
-        if (item.area === 'Politico') prev.data[0] += item.puntuacion;
-        if (item.area === 'Economico') prev.data[1] += item.puntuacion;
+        if (item.area === 'Político') prev.data[0] += item.puntuacion;
+        if (item.area === 'Económico') prev.data[1] += item.puntuacion;
         if (item.area === 'Social') prev.data[2] += item.puntuacion;
-        if (item.area === 'Tecnologico') prev.data[3] += item.puntuacion;
+        if (item.area === 'Tecnológico') prev.data[3] += item.puntuacion;
         if (item.area === 'Ambiental') prev.data[4] += item.puntuacion;
         if (item.area === 'Legal') prev.data[5] += item.puntuacion;
         return prev;

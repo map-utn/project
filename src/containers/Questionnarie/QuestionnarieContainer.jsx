@@ -40,7 +40,7 @@ const QuestionnarieContainer = () => {
       <LayoutContainer>
         <Container>
           <QuestionnaireView
-            title="Teoria"
+            title="Teoría"
             onClickButtonGoBack={onClickResultsButtonGoBack}
             onClickNextButton={onClickNextButton}
             openComments={(target) => setAnchorElement(target)}
